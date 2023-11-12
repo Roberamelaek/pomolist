@@ -30,7 +30,7 @@ class TodoListView(View):
         lines = content.split('\n')
         if lines:
             title_line = lines[0].strip('#').strip()
-            title = markdown2.markdown(title_line, extras=["fenced-code-blocks"])
+            title = title_line  # Removed markdown conversion
             description = '\n'.join(lines[1:]).strip()
             return title, description
         return '', ''
