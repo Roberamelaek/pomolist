@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 
+TODO_FILES_DIRECTORY = '/home/pomolist/Flexo'
 # Application definition
 
 INSTALLED_APPS = [
